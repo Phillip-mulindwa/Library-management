@@ -9,9 +9,11 @@
   "section_break_hmq2",
   "amended_from",
   "applicant",
+  "applicant_name",
   "book",
   "transaction_date",
-  "status"
+  "status",
+  "return_date"
  ],
  "fields": [
   {
@@ -58,13 +60,25 @@
    "label": "Status",
    "options": "Draft\nReturned\nOverdue",
    "reqd": 1
+  },
+  {
+   "fetch_from": "applicant.full_name",
+   "fieldname": "applicant_name",
+   "fieldtype": "Data",
+   "label": "Applicant Name"
+  },
+  {
+   "fieldname": "return_date",
+   "fieldtype": "Date",
+   "label": "Return Date",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-02-11 16:17:45.945058",
+ "modified": "2026-02-19 16:32:06.238313",
  "modified_by": "Administrator",
  "module": "Lib",
  "name": "Loan",
